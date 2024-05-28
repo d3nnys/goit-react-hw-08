@@ -1,7 +1,7 @@
 import { Formik, Form, Field, ErrorMessage } from 'formik';
-import * as Yup from 'yup';
 import { useDispatch } from 'react-redux';
 import { register } from '../../redux/auth/operations';
+import * as Yup from 'yup';
 import css from './RegistrationForm.module.css';
 import toast from 'react-hot-toast';
 
@@ -24,7 +24,6 @@ export default function RegistrationForm() {
   const dispatch = useDispatch();
 
   const handleSubmit = (values, actions) => {
-    console.log(values); // Логування значень форми для діагностики
     dispatch(register(values))
       .unwrap()
       .then(() => {

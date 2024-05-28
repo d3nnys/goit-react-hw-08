@@ -1,13 +1,14 @@
 .form {
   display: grid;
-  gap: 10px;
+  gap: 15px;
   padding: 30px 20px;
 }
 
 .inputWrapper {
+  position: relative;
   display: flex;
   flex-direction: column;
-  gap: 4px;
+  gap: 2px;
 }
 
 .inputWrapper:last-of-type {
@@ -29,4 +30,14 @@
   border-radius: 9px;
   outline: none;
   background-color: lightblue;
+}
+
+.error {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -16px;
+
+  font-size: 13px;
+  color: crimson;
 }
