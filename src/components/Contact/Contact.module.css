@@ -25,3 +25,7 @@
   border: transparent;
   outline: none;
 }
+
+.btn:hover {
+  background-color: #3b3bda;
+}

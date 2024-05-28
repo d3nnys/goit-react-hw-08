@@ -1,3 +1,7 @@
-/* .text {
-  color: #fafafa;
-} */
+.title {
+  margin-bottom: 10px;
+}
+
+.text {
+  font-size: 20px;
+}

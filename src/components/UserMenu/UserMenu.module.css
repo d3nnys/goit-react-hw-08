@@ -12,10 +12,10 @@
   display: grid;
   place-items: center;
 
-  padding: 5px 10px;
+  padding: 5px 13px;
   max-width: 135px;
-  border: 1px solid black;
+  border: none;
   border-radius: 9px;
   outline: none;
-  background-color: rgb(131, 255, 23);
+  background-color: #ffffff;
 }

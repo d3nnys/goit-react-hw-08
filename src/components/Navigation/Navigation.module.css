@@ -5,6 +5,10 @@
   color: white;
 }
 
+.link:hover {
+  color: rgb(110 0 0);
+}
+
 .list {
   display: flex;
   gap: 12px;

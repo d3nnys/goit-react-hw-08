@@ -4,7 +4,7 @@ import css from './Loader.module.css';
 export default function Loader() {
   return (
     <div className={css.loader}>
-      <b>Please wait or reload page</b>
+      {/* <b>Please wait or reload page</b> */}
       <MagnifyingGlass
         visible={true}
         height="80"

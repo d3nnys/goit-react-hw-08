@@ -1,7 +1,7 @@
 import { FaUserLarge } from 'react-icons/fa6';
 import { FaPhone } from 'react-icons/fa6';
 import { useDispatch } from 'react-redux';
-import { deleteContact } from '../../redux/contacts/slice';
+import { deleteContact } from '../../redux/contacts/operations';
 import css from './Contact.module.css';
 
 export default function Contact({ name, number, id }) {
@@ -12,7 +12,6 @@ export default function Contact({ name, number, id }) {
     <>
       <div>
         <p className={css.name}>
-          {' '}
           <FaUserLarge />
           {name}
         </p>

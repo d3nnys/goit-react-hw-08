@@ -9,3 +9,7 @@
 
   color: white;
 }
+
+.link:hover {
+  color: rgb(110 0 0);
+}

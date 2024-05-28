@@ -10,11 +10,13 @@ export default function LoginForm() {
   const handleSubmit = (values, actions) => {
     dispatch(logIn(values))
       .unwrap()
-      .then(response => {
-        console.log(response);
+      .then(() => {
         toast.success('Welcome back!');
       })
       .catch(error => {
+        toast.error(
+          'You have entered an incorrect email or password, please try again.'
+        );
         console.log(error.message);
       });
 
@@ -22,21 +24,19 @@ export default function LoginForm() {
   };
 
   const initialValues = {
-    name: '',
     email: '',
+    password: '',
   };
 
   return (
     <Formik initialValues={initialValues} onSubmit={handleSubmit}>
       <Form className={css.form} autoComplete="off">
         <div className={css.inputWrapper}>
-          <label className={css.label} />
-          Email
-          <Field className={css.input} type="email" name="email" />
+          <label className={css.label}>Email</label>
+          <Field className={css.input} type="email" name="email" autoFocus />
         </div>
         <div className={css.inputWrapper}>
-          <label className={css.label} />
-          Password
+          <label className={css.label}>Password</label>
           <Field className={css.input} type="password" name="password" />
         </div>
         <button className={css.btn} type="submit">

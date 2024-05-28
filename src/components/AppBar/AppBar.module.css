@@ -2,7 +2,7 @@
   display: flex;
   justify-content: space-around;
 
-  background-color: rgba(255, 13, 0, 0.816);
+  background-color: rgb(255 106 0);
   border-radius: 0 0 24px 24px;
-  margin-bottom: 40px;
+  margin-bottom: 30px;
 }
