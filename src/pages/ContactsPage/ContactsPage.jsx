@@ -7,6 +7,7 @@ import ContactForm from '../../components/ContactForm/ContactForm';
 import css from './ContactsPage.module.css';
 import Loader from '../../components/Loader/Loader';
 import Error from '../../components/Error/Error';
+import SearchBox from '../../components/SearchBox/SearchBox';
 
 export default function TasksPage() {
   const dispatch = useDispatch();
@@ -22,6 +23,7 @@ export default function TasksPage() {
       <p className={css.title}>Your Contacts</p>
       <ContactForm />
       <div className={css.loader}>{isLoading && 'Request in progress...'}</div>
+      <SearchBox />
       <ContactList />
       {isLoading && <Loader />}
       {isError && <Error />}
