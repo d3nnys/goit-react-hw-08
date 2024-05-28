@@ -1,0 +1,11 @@
+.link {
+  display: block;
+
+  padding: 20px 10px;
+  color: white;
+}
+
+.list {
+  display: flex;
+  gap: 12px;
+}
