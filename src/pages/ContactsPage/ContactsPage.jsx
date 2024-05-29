@@ -9,7 +9,7 @@ import Loader from '../../components/Loader/Loader';
 import Error from '../../components/Error/Error';
 import SearchBox from '../../components/SearchBox/SearchBox';
 
-export default function TasksPage() {
+export default function ContactsPage() {
   const dispatch = useDispatch();
   const isLoading = useSelector(selectLoading);
   const isError = useSelector(selectError);
@@ -22,8 +22,8 @@ export default function TasksPage() {
     <div>
       <p className={css.title}>Your Contacts</p>
       <ContactForm />
-      <div className={css.loader}>{isLoading && 'Request in progress...'}</div>
       <SearchBox />
+      <div className={css.loader}>{isLoading && 'Request in progress...'}</div>
       <ContactList />
       {isLoading && <Loader />}
       {isError && <Error />}
